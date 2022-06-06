@@ -1,4 +1,19 @@
-# Markdown Files
+---
+jupytext:
+  cell_metadata_filter: -all
+  formats: md:myst
+  text_representation:
+    extension: .md
+    format_name: myst
+    format_version: 0.13
+    jupytext_version: 1.13.8
+kernelspec:
+  display_name: Python 3 (ipykernel)
+  language: python
+  name: python3
+---
+
+# Written Report – 6.419x Module 1
 
 Whether you write your book's content in Jupyter Notebooks (`.ipynb`) or
 in regular markdown files (`.md`), you'll write in the same flavor of markdown
@@ -52,6 +67,7 @@ In your built book.
 For more information on writing directives, see the
 [MyST documentation](https://myst-parser.readthedocs.io/).
 
++++
 
 ### Using a role
 
@@ -71,6 +87,7 @@ role syntax `` {doc}`intro` `` will result in: {doc}`intro`.
 For more information on writing roles, see the
 [MyST documentation](https://myst-parser.readthedocs.io/).
 
++++
 
 ### Adding a citation
 
@@ -94,6 +111,7 @@ Resulting in a rendered bibliography that looks like:
 ```{bibliography} references.bib
 ```
 
++++
 
 ### Executing code in your markdown files
 
@@ -116,6 +134,33 @@ directive to run the code at build time:
 print("Here is some code to execute")
 ```
 ````
+
+```{code-cell}
+from matplotlib import rcParams, cycler
+import matplotlib.pyplot as plt
+import numpy as np
+plt.ion()
+
+# Fixing random state for reproducibility
+np.random.seed(19680801)
+
+N = 10
+data = [np.logspace(0, 1, 100) + np.random.randn(100) + ii for ii in range(N)]
+data = np.array(data).T
+cmap = plt.cm.coolwarm
+rcParams['axes.prop_cycle'] = cycler(color=cmap(np.linspace(0, 1, N)))
+
+
+from matplotlib.lines import Line2D
+custom_lines = [Line2D([0], [0], color=cmap(0.), lw=4),
+                Line2D([0], [0], color=cmap(.5), lw=4),
+                Line2D([0], [0], color=cmap(1.), lw=4)]
+
+fig, ax = plt.subplots(figsize=(10, 5))
+lines = ax.plot(data)
+ax.legend(custom_lines, ['Cold', 'Medium', 'Hot']);
+
+```
 
 When your book is built, the contents of any `{code-cell}` blocks will be
 executed with your default Jupyter kernel, and their outputs will be displayed
