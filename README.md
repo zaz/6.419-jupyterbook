@@ -16,6 +16,12 @@
    1. or `jupyter book build --builder pdflatex .` (untested)
    2. or `jupyter book build --builder pdfhtml .` (untested)
 
+## Tips
+
+If you're on Linux and want to continuously rebuild the book when any changes
+occur, you could use:
+
+    while :; do watch -gn .1 stat -c %Z * && jupyter book build .; sleep 0.1; done
 
 ## ToDo
 
