@@ -17,7 +17,7 @@ kernelspec:
 
 <span class="author">**Name:** username</span>
 
-### Problem 1.1
+## Problem 1.1
 
 *1. (2 points): How would you run a randomized controlled double-blind experiment to determine the effectiveness of the vaccine? Write down procedures for the experimenter to follow. (Maximum 200 words.)*
 
@@ -61,7 +61,7 @@ kernelspec:
 
 <br>
 
-### Problem 1.3
+## Problem 1.3
 
 *(a-1). (2 points): Your colleague on education studies really cares about what can improve the education outcome in early childhood. He thinks the ideal planning should be to include as much variables as possible and regress children's educational outcome on the set. Then we select the variables that are shown to be statistically significant and inform the policy makers. Is this approach likely to produce the intended good policies? (Maximum 300 words.)*
 
@@ -135,7 +135,7 @@ kernelspec:
 
 <br>
 
-### Problem 1.5
+## Problem 1.5
 
 *(8). (3 points): Show that the extent of repeated independent testing by different teams can reduce the probability of the research being true. Start by writing the PPV as:*
 
