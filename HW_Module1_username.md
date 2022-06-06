@@ -17,156 +17,156 @@ kernelspec:
 
 <span class="author">**Name:** username</span>
 
-Whether you write your book's content in Jupyter Notebooks (`.ipynb`) or
-in regular markdown files (`.md`), you'll write in the same flavor of markdown
-called **MyST Markdown**.
+### Problem 1.1
 
-## What is MyST?
+*1. (2 points): How would you run a randomized controlled double-blind experiment to determine the effectiveness of the vaccine? Write down procedures for the experimenter to follow. (Maximum 200 words.)*
 
-MyST stands for "Markedly Structured Text". It
-is a slight variation on a flavor of markdown called "CommonMark" markdown,
-with small syntax extensions to allow you to write **roles** and **directives**
-in the Sphinx ecosystem.
+**Solution:**
 
-## What are roles and directives?
+<br>
 
-Roles and directives are two of the most powerful tools in Jupyter Book. They
-are kind of like functions, but written in a markup language. They both
-serve a similar purpose, but **roles are written in one line**, whereas
-**directives span many lines**. They both accept different kinds of inputs,
-and what they do with those inputs depends on the specific role or directive
-that is being called.
+*2. (3 points): For each of the NFIP study, and the Randomized controlled double blind experiment above, which numbers (or estimates) show the effectiveness of the vaccine? Describe whether the estimates suggest the vaccine is effective. (Maximum 200 words.)*
 
-### Using a directive
+**Solution:**
 
-At its simplest, you can insert a directive into your book's content like so:
+<br>
 
-````
-```{mydirectivename}
-My directive content
-```
-````
+*3a. (2 points): *Scenario:* What if Grade 1 and Grade 3 students are different from Grade 2 students in some ways? For example, what if children of different ages are susceptible to polio in different degrees? Can such a difference influence the result from the NFIP experiment? If so, give an example of how a difference between the groups can influence the result. Describe an experimental design that will prevent this difference between groups from making the estimate not reliable. (Maximum 200 words.)*
 
-This will only work if a directive with name `mydirectivename` already exists
-(which it doesn't). There are many pre-defined directives associated with
-Jupyter Book. For example, to insert a note box into your content, you can
-use the following directive:
+**Solution:**
 
-````
-```{note}
-Here is a note
-```
-````
+<br>
 
-This results in:
+*3b. (2 points): Polio is an infectious disease. The NFIP study was not done blind; that is, the children know whether they get the vaccine or not. Could this bias the results? If so, Give an example of how it could bias the results. Describe an aspect of an experimental design that prevent this kind of bias. (Maximum 200 words.)*
 
-```{note}
-Here is a note
-```
+**Solution:**
 
-In your built book.
+<br>
 
-For more information on writing directives, see the
-[MyST documentation](https://myst-parser.readthedocs.io/).
+*3c. (2 points): Even if the act of "getting vaccine" does lead to reduced infection, it does not necessarily mean that it is the vaccine itself that leads to this result. Give an example of how this could be the case. Describe an aspect of experimental design that would eliminate biases not due to the vaccine itself. (Maximum 200 words.)*
 
-+++
+**Solution:**
 
-### Using a role
+<br>
 
-Roles are very similar to directives, but they are less-complex and written
-entirely on one line. You can insert a role into your book's content with
-this pattern:
+*4. (2 points): In both experiments, neither control groups nor the no-consent groups got the vaccine. Yet the no-consent groups had a lower rate of polio compared to the control group. Why could that be? (Maximum 200 words.)*
 
-```
-Some content {rolename}`and here is my role's content!`
-```
+**Solution:**
 
-Again, roles will only work if `rolename` is a valid role's name. For example,
-the `doc` role can be used to refer to another page in your book. You can
-refer directly to another page by its relative path. For example, the
-role syntax `` {doc}`intro` `` will result in: {doc}`intro`.
+<br>
 
-For more information on writing roles, see the
-[MyST documentation](https://myst-parser.readthedocs.io/).
+*5. (3 points): In the randomized controlled trial, the children whose parents refused to participate in the trial got polio at the rate of 46 per 100000, while the children whose parents consented to participate got polio at a slighter higher rate of 49 per 100000 (treatment and control groups taken together). On the basis of these numbers, in the following year, some parents refused to allow their children to participate in the experiment and be exposed to this higher risk of polio. Were their conclusion correct? What would be the consequence if a large group of parents act this way in the next year's trial? (Maximum 200 words.)*
 
-+++
+**Solution:**
 
-### Adding a citation
+<br>
 
-You can also cite references that are stored in a `bibtex` file. For example,
-the following syntax: `` {cite}`holdgraf_evidence_2014` `` will render like
-this: {cite}`holdgraf_evidence_2014`.
+### Problem 1.3
 
-Moreoever, you can insert a bibliography into your page with this syntax:
-The `{bibliography}` directive must be used for all the `{cite}` roles to
-render properly.
-For example, if the references for your book are stored in `references.bib`,
-then the bibliography is inserted with:
+*(a-1). (2 points): Your colleague on education studies really cares about what can improve the education outcome in early childhood. He thinks the ideal planning should be to include as much variables as possible and regress children's educational outcome on the set. Then we select the variables that are shown to be statistically significant and inform the policy makers. Is this approach likely to produce the intended good policies? (Maximum 300 words.)*
 
-````
-```{bibliography} references.bib
-```
-````
+**Solution:**
 
-Resulting in a rendered bibliography that looks like:
+<br>
 
-```{bibliography} references.bib
-```
+*(a-2). (3 points): Your friend hears your point, and think it makes sense. He also hears about that with more data, relations are less likely to be observed just by chance, and inference becomes more accurate. He asks, if he gets more and more data, will the procedure he proposes find the true effects? (Maximum 300 words.)*
 
-+++
+**Solution:**
 
-### Executing code in your markdown files
+<br>
 
-If you'd like to include computational content inside these markdown files,
-you can use MyST Markdown to define cells that will be executed when your
-book is built. Jupyter Book uses *jupytext* to do this.
+*(b-1). (2 points): A economist collects data on many nation-wise variables and surprisingly find that if they run a regression between chocolate consumption and number of Nobel prize laureates, the coefficient to be statistically significant. Should he conclude that there exists a relationship between Nobel prize and chocolate consumption? (Maximum 300 words.)*
 
-First, add Jupytext metadata to the file. For example, to add Jupytext metadata
-to this markdown page, run this command:
+**Solution:**
 
-```
-jupyter-book myst init markdown.md
-```
+<br>
 
-Once a markdown file has Jupytext metadata in it, you can add the following
-directive to run the code at build time:
+*(b-2). (2 points): A neuroscience lab is interested in how consumption of sugar and coco may effect development of intelligence and brain growth. They collect data on chocolate consumption and number of Nobel prize laureates in each nation, and finds the correlation to be statistically significant. Should they conclude that there exists a relationship between chocolate consumption and intelligence? (Maximum 300 words.)*
 
-````
-```{code-cell}
-print("Here is some code to execute")
-```
-````
+**Solution:**
 
-```{code-cell}
-from matplotlib import rcParams, cycler
-import matplotlib.pyplot as plt
-import numpy as np
-plt.ion()
+<br>
 
-# Fixing random state for reproducibility
-np.random.seed(19680801)
+*(b-3). (1 point): In order to study the relation between chocolate consumption and intelligence, what can they do? (Maximum 300 words.)*
 
-N = 10
-data = [np.logspace(0, 1, 100) + np.random.randn(100) + ii for ii in range(N)]
-data = np.array(data).T
-cmap = plt.cm.coolwarm
-rcParams['axes.prop_cycle'] = cycler(color=cmap(np.linspace(0, 1, N)))
+**Solution:**
 
+<br>
 
-from matplotlib.lines import Line2D
-custom_lines = [Line2D([0], [0], color=cmap(0.), lw=4),
-                Line2D([0], [0], color=cmap(.5), lw=4),
-                Line2D([0], [0], color=cmap(1.), lw=4)]
+*(b-4). (3 points): The lab runs a randomized experiment on 100 mice, add chocolate in half of the mice's diet and add in another food of the equivalent calories in another half's diet. They find that the difference between the two groups time in solving a maze puzzle has p-value lower then 0.05. Should they conclude that chocolate consumption leads to improved cognitive power in mice? (Maximum 300 words.)*
 
-fig, ax = plt.subplots(figsize=(10, 5))
-lines = ax.plot(data)
-ax.legend(custom_lines, ['Cold', 'Medium', 'Hot']);
+**Solution:**
 
-```
+<br>
 
-When your book is built, the contents of any `{code-cell}` blocks will be
-executed with your default Jupyter kernel, and their outputs will be displayed
-in-line with the rest of your content.
+*(b-5). (3 points): The lab collects individual level data on 50000 humans on about 100 features including IQ and chocolate consumption. They find that the relation between chocolate consumption and IQ has a p-value higher than 0.05. However, they find that there are some other variables in the data set that has p-value lower than 0.05, namely, their father's income and number of siblings. So they decide to not write about chocolate consumption, but rather, report these statistically significant results in their paper, and provide possible explanations. Is this approach correct? (Maximum 300 words.)*
 
-For more information about executing computational content with Jupyter Book,
-see [The MyST-NB documentation](https://myst-nb.readthedocs.io/).
+**Solution:**
+
+<br>
+
+*(c). (3 points): A lab just finishes a randomized controlled trial on 10000 participants for a new drug, and find a treatment effect with p-value smaller than 0.05. After a journalist interviewed the lab, he wrote a news article titled "New trial shows strong effect of drug X on curing disease Y." Is this title appropriate? What about "New drug proves over 95% success rate of drug X on curing disease Y"? (Maximum 300 words.)*
+
+**Solution:**
+
+<br>
+
+*(d). (1 point): Your boss wants to decide on company's spending next year. He thinks letting each committee debates and propose the budget is too subjective a process and the company should learn from its past and let the fact talk. He gives you the data on expenditure in different sectors and the company's revenue for the past 25 years. You run a regression of the revenue on the spending on HR sector, and find a large effect, but the effect is not statistically significant. Your boss saw the result and says “Oh, then we shouldn't increase our spending on HR then". Is his reasoning right? (Maximum 300 words.)*
+
+**Solution:**
+
+<br>
+
+*(e). (1 point): Even if a test is shown as significant by replication of the same experiment, we still cannot make a scientific claim. True or False? (Maximum 300 words.)*
+
+**Solution:**
+
+<br>
+
+*(f). (2 points): Your lab mate is writing up his paper. He says if he reports all the tests and hypothesis he has done, the results will be too long, so he wants to report only the statistical significant ones. Is this OK? If not, why? (Maximum 300 words.)*
+
+**Solution:**
+
+<br>
+
+*(g). (2 points): If I see a significant p-values, it could be the case that the null hypothesis is consistent with truth, but my statistical model does not match reality. True or False? (Maximum 300 words.)*
+
+**Solution:**
+
+<br>
+
+### Problem 1.5
+
+*(8). (3 points): Show that the extent of repeated independent testing by different teams can reduce the probability of the research being true. Start by writing the PPV as:*
+
+$$\displaystyle  \text {PPV} \displaystyle = \frac{\mathbf{P}(\textrm{relation exists, at least one of the n repetitions finds significant})}{\mathbf{P}(\textrm{at least one of the n repetitions finds significant})}$$
+
+*(Maximum 100 words.)*
+
+**Solution:**
+
+<br>
+
+*(9). (2 points): What would make bias or increasing teams testing the same hypothesis not decrease PPV? (Assuming  $\alpha=0.05$.) (Maximum 100 words.)*
+
+**Solution:**
+
+<br>
+
+*(10). (5 points): Read critically and critique! Remember the gold rule of science, replication? For the third table in the paper, if researchers work on the same hypothesis but only one team finds significance, the other teams are likely to think the results is not robust, since it is not replicable. In light of this, how would you model the situation when multiple teams work on the same hypothesis and the scientific community requires unanimous replication? What would be the PPV? (Maximum 100 words.)*
+
+**Solution:**
+
+<br>
+
+*(11). (3 points): Suppose there is no bias and no teams are racing for the same test, so there is no misconduct and poor practices. Will publications still likely to be false than true? (Maximum 100 words.)*
+
+**Solution:**
+
+<br>
+
+*(12). (2 points): In light of this paper, let's theoretically model the problem of concern in Problem 1.3! Suppose people base the decision to making scientific claim on p-values, which parameter does this influence?  $R$, $\alpha$, or $\beta$? Describe the effect on the PPV if scientists probe random relations and just look at p-value as a certificate for making scientific conclusion. (Maximum 100 words.)*
+
+**Solution:**
+
+<br>
