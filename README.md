@@ -5,7 +5,7 @@
 1. Install jupyter-book, etc:
    ```pip3 install -r requirements.txt```
 2. Replace `username` with your edX username in:
-   1. `_config.yml`,
+   1. `_toc.yml`,
    2. the filenames: `HW1_Module1_username.md`, etc,
    3. and inside the files themselves: `**Name:** username`
 3. Check that the questions match those on edX and report an issue on GitHub
