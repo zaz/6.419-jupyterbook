@@ -21,7 +21,7 @@ p {
 }
 
 @media print{
-	.footer, #jb-print-toc {
+	.footer, #print-main-content {
 		display: none;
 	}
 	h1, .author {
@@ -29,6 +29,7 @@ p {
 	}
 	h1 {
 		font-size: 14pt !important;
+		padding: 0 25% 0 0;
 	}
 	main {
 		width: 100%;
