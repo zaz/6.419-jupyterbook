@@ -1,0 +1,21 @@
+main, h1, h2, h3 {
+	font-family: "Times New Roman", Times, serif !important;
+}
+main {
+	font-size: 11pt;
+}
+h1, .author {
+	text-align: right;
+}
+h1 {
+	font-size: 14pt;
+}
+h2 {
+	font-size: 18pt;
+}
+h3 {
+	font-size: 14pt;
+}
+p {
+	text-align: justify;
+}
