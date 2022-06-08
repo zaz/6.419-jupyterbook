@@ -26,6 +26,7 @@ p {
 	}
 	h1, .author {
 		text-align: right !important;
+		padding-bottom: 2em;
 	}
 	h1 {
 		font-size: 14pt !important;
