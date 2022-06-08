@@ -19,3 +19,18 @@ h3 {
 p {
 	text-align: justify;
 }
+
+@media print{
+	.footer, #jb-print-toc {
+		display: none;
+	}
+	h1, .author {
+		text-align: right !important;
+	}
+	h1 {
+		font-size: 14pt !important;
+	}
+	main {
+		width: 100%;
+	}
+}
