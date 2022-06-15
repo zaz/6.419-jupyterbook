@@ -25,8 +25,9 @@ occur, you could use:
 
 ## ToDo
 
-1. Test building directly to PDF (likely just requires some dependencies to be
+1. Make font size of final PDF bigger: 11pt.
+2. Test building directly to PDF (likely just requires some dependencies to be
    installed).
-2. Add a CSS file to format the book correctly.
-3. Use Markdown substitutions (`{{author}}`) to eliminate the need to manually
+3. Improve CSS formatting.
+4. Use Markdown substitutions (`{{author}}`) to eliminate the need to manually
    find and replace your username. I could not get these to work.
