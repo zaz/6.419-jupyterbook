@@ -17,6 +17,11 @@ kernelspec:
 
 <div class="author">**Name:** username</div>
 
+```{code-cell}
+:tags: ["remove-input"]
+import numpy as np
+```
+
 ## Problem 1.1
 
 *1. (2 points): How would you run a randomized controlled double-blind experiment to determine the effectiveness of the vaccine? Write down procedures for the experimenter to follow. (Maximum 200 words.)*
@@ -170,3 +175,10 @@ $$\displaystyle  \text {PPV} \displaystyle = \frac{\mathbf{P}(\textrm{relation e
 **Solution:**
 
 <br>
+
+## Includes
+
+```{code-cell}
+:tags: ["remove-output"]
+import numpy as np
+```
