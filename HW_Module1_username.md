@@ -15,7 +15,7 @@ kernelspec:
 
 # Written Report – 6.419x Module 1
 
-<span class="author">**Name:** username</span>
+<div class="author">**Name:** username</div>
 
 ## Problem 1.1
 
