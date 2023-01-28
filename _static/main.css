@@ -1,0 +1,39 @@
+main, h1, h2, h3 {
+	font-family: "Times New Roman", Times, serif !important;
+}
+main {
+	font-size: 16pt;
+}
+h1, .author {
+	text-align: right;
+}
+#jb-print-docs-body h1 {
+	font-size: 21pt !important;
+}
+h2 {
+	font-size: 21pt;
+}
+h3 {
+	font-size: 19pt;
+}
+p {
+	text-align: justify;
+}
+
+@media print{
+	.footer, #print-main-content {
+		display: none;
+	}
+	h1, .author {
+		text-align: right !important;
+		padding-bottom: 2em;
+	}
+	h1 {
+		font-size: 14pt !important;
+		padding: 0;
+	}
+	#main-content {
+		min-width: 90%;
+		padding: .5em 0;
+	}
+}

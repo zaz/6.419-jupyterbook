@@ -27,6 +27,8 @@ occur, you could use:
 
 1. Test building directly to PDF (likely just requires some dependencies to be
    installed).
-2. Add a CSS file to format the book correctly.
+2. Add a CSS file to format the book correctly:
+   1. Align username with title.
+   2. Don't let pages break up answer blocks.
 3. Use Markdown substitutions (`{{author}}`) to eliminate the need to manually
    find and replace your username. I could not get these to work.

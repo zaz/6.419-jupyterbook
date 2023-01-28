@@ -1,6 +1,10 @@
 # Table of content
 # Learn more at https://jupyterbook.org/customize/toc.html
 #
-- file: intro
-  sections:
-    - file: HW_Module1_username
+format: jb-article
+root: intro
+sections:
+- file: HW_Module1_username
+- file: HW_Module2_username
+- file: HW_Module3_username
+- file: HW_Module5_username

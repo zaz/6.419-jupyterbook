@@ -15,7 +15,7 @@ kernelspec:
 
 # Written Report – 6.419x Module 1
 
-<span class="author">**Name:** username</span>
+<div class="author"><b>Name:</b> username</div>
 
 ## Problem 1.1
 
@@ -29,11 +29,13 @@ kernelspec:
 
 **Solution:**
 
+
 <br>
 
 *3a. (2 points): *Scenario:* What if Grade 1 and Grade 3 students are different from Grade 2 students in some ways? For example, what if children of different ages are susceptible to polio in different degrees? Can such a difference influence the result from the NFIP experiment? If so, give an example of how a difference between the groups can influence the result. Describe an experimental design that will prevent this difference between groups from making the estimate not reliable. (Maximum 200 words.)*
 
 **Solution:**
+
 
 <br>
 
@@ -41,11 +43,13 @@ kernelspec:
 
 **Solution:**
 
+
 <br>
 
 *3c. (2 points): Even if the act of "getting vaccine" does lead to reduced infection, it does not necessarily mean that it is the vaccine itself that leads to this result. Give an example of how this could be the case. Describe an aspect of experimental design that would eliminate biases not due to the vaccine itself. (Maximum 200 words.)*
 
 **Solution:**
+
 
 <br>
 
@@ -53,11 +57,13 @@ kernelspec:
 
 **Solution:**
 
+
 <br>
 
 *5. (3 points): In the randomized controlled trial, the children whose parents refused to participate in the trial got polio at the rate of 46 per 100000, while the children whose parents consented to participate got polio at a slighter higher rate of 49 per 100000 (treatment and control groups taken together). On the basis of these numbers, in the following year, some parents refused to allow their children to participate in the experiment and be exposed to this higher risk of polio. Were their conclusion correct? What would be the consequence if a large group of parents act this way in the next year's trial? (Maximum 200 words.)*
 
 **Solution:**
+
 
 <br>
 
@@ -67,11 +73,13 @@ kernelspec:
 
 **Solution:**
 
+
 <br>
 
 *(a-2). (3 points): Your friend hears your point, and think it makes sense. He also hears about that with more data, relations are less likely to be observed just by chance, and inference becomes more accurate. He asks, if he gets more and more data, will the procedure he proposes find the true effects? (Maximum 300 words.)*
 
 **Solution:**
+
 
 <br>
 
@@ -79,11 +87,13 @@ kernelspec:
 
 **Solution:**
 
+
 <br>
 
 *(b-2). (2 points): A neuroscience lab is interested in how consumption of sugar and coco may effect development of intelligence and brain growth. They collect data on chocolate consumption and number of Nobel prize laureates in each nation, and finds the correlation to be statistically significant. Should they conclude that there exists a relationship between chocolate consumption and intelligence? (Maximum 300 words.)*
 
 **Solution:**
+
 
 <br>
 
@@ -91,11 +101,13 @@ kernelspec:
 
 **Solution:**
 
+
 <br>
 
 *(b-4). (3 points): The lab runs a randomized experiment on 100 mice, add chocolate in half of the mice's diet and add in another food of the equivalent calories in another half's diet. They find that the difference between the two groups time in solving a maze puzzle has p-value lower then 0.05. Should they conclude that chocolate consumption leads to improved cognitive power in mice? (Maximum 300 words.)*
 
 **Solution:**
+
 
 <br>
 
@@ -103,11 +115,13 @@ kernelspec:
 
 **Solution:**
 
+
 <br>
 
 *(c). (3 points): A lab just finishes a randomized controlled trial on 10000 participants for a new drug, and find a treatment effect with p-value smaller than 0.05. After a journalist interviewed the lab, he wrote a news article titled "New trial shows strong effect of drug X on curing disease Y." Is this title appropriate? What about "New drug proves over 95% success rate of drug X on curing disease Y"? (Maximum 300 words.)*
 
 **Solution:**
+
 
 <br>
 
@@ -115,11 +129,13 @@ kernelspec:
 
 **Solution:**
 
+
 <br>
 
 *(e). (1 point): Even if a test is shown as significant by replication of the same experiment, we still cannot make a scientific claim. True or False? (Maximum 300 words.)*
 
 **Solution:**
+
 
 <br>
 
@@ -127,23 +143,26 @@ kernelspec:
 
 **Solution:**
 
+
 <br>
 
 *(g). (2 points): If I see a significant p-values, it could be the case that the null hypothesis is consistent with truth, but my statistical model does not match reality. True or False? (Maximum 300 words.)*
 
 **Solution:**
 
+
 <br>
 
 ## Problem 1.5
 
-*(8). (3 points): Show that the extent of repeated independent testing by different teams can reduce the probability of the research being true. Start by writing the PPV as:*
-
-$$\displaystyle  \text {PPV} \displaystyle = \frac{\mathbf{P}(\textrm{relation exists, at least one of the n repetitions finds significant})}{\mathbf{P}(\textrm{at least one of the n repetitions finds significant})}$$
-
-*(Maximum 100 words.)*
+*(8). (3 points): Show that the extent of repeated independent testing by different teams can reduce the probability of the research being true. (Maximum 100 words.)*
 
 **Solution:**
+
+$$\begin{align*}
+\text{PPV} &= \frac{\mathbf{P}(\textrm{relation exists, at least one of the n repetitions finds significant})}{\mathbf{P}(\textrm{at least one of the n repetitions finds significant})} \\
+&= \frac{}{} \\
+\end{align*}$$
 
 <br>
 
@@ -151,11 +170,13 @@ $$\displaystyle  \text {PPV} \displaystyle = \frac{\mathbf{P}(\textrm{relation e
 
 **Solution:**
 
+
 <br>
 
 *(10). (5 points): Read critically and critique! Remember the gold rule of science, replication? For the third table in the paper, if researchers work on the same hypothesis but only one team finds significance, the other teams are likely to think the results is not robust, since it is not replicable. In light of this, how would you model the situation when multiple teams work on the same hypothesis and the scientific community requires unanimous replication? What would be the PPV? (Maximum 100 words.)*
 
 **Solution:**
+
 
 <br>
 
@@ -163,10 +184,12 @@ $$\displaystyle  \text {PPV} \displaystyle = \frac{\mathbf{P}(\textrm{relation e
 
 **Solution:**
 
+
 <br>
 
 *(12). (2 points): In light of this paper, let's theoretically model the problem of concern in Problem 1.3! Suppose people base the decision to making scientific claim on p-values, which parameter does this influence?  $R$, $\alpha$, or $\beta$? Describe the effect on the PPV if scientists probe random relations and just look at p-value as a certificate for making scientific conclusion. (Maximum 100 words.)*
 
 **Solution:**
+
 
 <br>
