@@ -65,9 +65,7 @@ from sklearn.model_selection import train_test_split
 
 ## Problem 3.1
 
-*(4 points) Consider the $\mathrm{MA}(1)$ model,
-$$ X_t = W_t + \theta W_{t-1} $$,
-where $\{W_t\} \sim W \sim \mathcal N(0,\sigma^2)$. Find the autocovariance function of $\{X_t\}$.
+*(4 points) Consider the $\mathrm{MA}(1)$ model, $ X_t = W_t + \theta W_{t-1} $, where $\{W_t\} \sim W \sim \mathcal N(0,\sigma^2)$. Find the autocovariance function of $\{X_t\}$.
 Include all important steps of your computations in your report.*
 
 **Solution:**
@@ -77,9 +75,7 @@ Include all important steps of your computations in your report.*
 
 ## Problem 3.2
 
-*(4 points) Consider the $\mathrm{AR}(1)$ model,
-$$ X_t = \phi X_{t-1} + W_t $$,
-where $\{W_t\} \sim W \sim \mathcal N(0,\sigma^2)$. Suppose $|\phi| < 1$. Find the autocovariance function of $\{X_t\}$. (You may use, without proving, the fact that $\{X_t\}$ is stationary if $|\phi|<1$.)
+*(4 points) Consider the $\mathrm{AR}(1)$ model, $ X_t = \phi X_{t-1} + W_t $, where $\{W_t\} \sim W \sim \mathcal N(0,\sigma^2)$. Suppose $|\phi| < 1$. Find the autocovariance function of $\{X_t\}$. (You may use, without proving, the fact that $\{X_t\}$ is stationary if $|\phi|<1$.)
 Include all important steps of your computations in your report.*
 
 **Solution:**
