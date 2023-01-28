@@ -206,8 +206,7 @@ To replicate my results, the following code must be run before any code above.
 
 Save CSV data in a Numpy compressed array format for easy (and faster) access:
 
-```{code-cell}
-:tags: ["remove-output"]
+```
 import numpy as np
 import pandas as pd
 
@@ -227,8 +226,7 @@ The above only needs to be run once to clean the data; after that, the below mus
 
 ### Imports, Functions, and Definitions
 
-```{code-cell}
-:tags: ["remove-output"]
+```
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt

@@ -115,8 +115,7 @@ warnings.simplefilter(action='ignore', category=(FutureWarning, UserWarning))
 
 The code below must be run before any code above.  You will also need to install `pygraphviz` and `pygraphviz-dev`.
 
-```{code-cell}
-:tags: ["remove-output"]
+```
 import numpy as np
 import pandas as pd
 import networkx as nx

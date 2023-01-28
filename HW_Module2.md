@@ -96,8 +96,7 @@ The below code is run before any other code in this paper.
 
 Imports, data loading and pre-processing, constants, helper functions:
 
-```{code-cell}
-:tags: ["remove-output"]
+```
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
