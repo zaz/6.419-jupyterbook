@@ -37,6 +37,11 @@ code. You may be able to build the Jupyter Book directly from your `.ipynb`
 instead of converting it to markdown first: See the initial commit of this Git
 repository or search online for more details.
 
+## Alternatives
+
+- [R Markdown](https://github.com/upfl0/MITx-6.419x) — upfl0
+- [LaTeX](https://www.overleaf.com/read/ytcwypvhnzyd) — wkuang1
+
 ## ToDo
 
 1. Test building directly to PDF (likely just requires some dependencies to be
