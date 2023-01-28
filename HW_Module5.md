@@ -214,12 +214,12 @@ import pandas as pd
 OF = np.empty(shape=(2, 100, 555, 504))
 
 for t in range(100):
-    OF[0, t] = pd.read_csv(f"OceanFlow/{t+1}u.csv", header=None).T
-    OF[1, t] = pd.read_csv(f"OceanFlow/{t+1}v.csv", header=None).T
+    OF[0, t] = pd.read_csv(f"data/5/{t+1}u.csv", header=None).T
+    OF[1, t] = pd.read_csv(f"data/5/{t+1}v.csv", header=None).T
 
-mask = pd.read_csv(f"OceanFlow/mask.csv", header=None).T.iloc[:,::-1]
+mask = pd.read_csv(f"data/5/mask.csv", header=None).T.iloc[:,::-1]
 
-np.savez_compressed("OceanFlow.npz", OF=OF, mask=mask)
+np.savez_compressed("data/5/OceanFlow.npz", OF=OF, mask=mask)
 ```
 
 The above only needs to be run once to clean the data; after that, the below must be run in every session before evaluating code snippets above:
