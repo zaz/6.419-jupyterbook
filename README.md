@@ -30,6 +30,13 @@ occur, you could use:
 
     while :; do watch -gn .1 stat -c %Z * && jupyter book build .; sleep 0.1; done
 
+If you have a lot of code blocks that take a long time to run, you may want to
+prototype your report in a Jupyter Notebook first. Recompiling a Jupyter Book
+will run every code cell from scratch, so can take 10+ minutes for ML-heavy
+code. You may be able to build the Jupyter Book directly from your `.ipynb`
+instead of converting it to markdown first: See the initial commit of this Git
+repository or search online for more details.
+
 ## ToDo
 
 1. Test building directly to PDF (likely just requires some dependencies to be
