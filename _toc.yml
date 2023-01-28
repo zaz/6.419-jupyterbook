@@ -4,7 +4,7 @@
 format: jb-article
 root: intro
 sections:
-- file: HW_Module1_username
-- file: HW_Module2_username
-- file: HW_Module3_username
-- file: HW_Module5_username
+- file: HW_Module1
+- file: HW_Module2
+- file: HW_Module3
+- file: HW_Module5

@@ -4,15 +4,13 @@
 
 1. Install jupyter-book, etc:
    ```pip3 install -r requirements.txt```
-2. Replace `username` with your edX username in:
-   1. `_config.yml`,
-   2. the filenames: `HW1_Module1_username.md`, etc,
-   3. and inside the files themselves: `**Name:** username`
-3. Check that the questions match those on edX and report an issue on GitHub
+2. Replace "Full Name" with your name in `_config.yml`
+3. Replace `username` with your edX username in each `HW_ModuleX.md` file
+4. Check that the questions match those on edX and report an issue on GitHub
    otherwise.
-4. Answer questions (see `intro.md` for how to use MyST Markdown and add plots,
+5. Answer questions (see `intro.md` for how to use MyST Markdown and add plots,
    etc)
-5. Build the Jupyter Book with `jupyter book build .`
+6. Build the Jupyter Book with `jupyter book build .`
    1. or `jupyter book build --builder pdflatex .` (untested)
    2. or `jupyter book build --builder pdfhtml .` (untested)
 
