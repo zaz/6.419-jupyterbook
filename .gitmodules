@@ -1,6 +1,3 @@
-[submodule "p2data"]
-	path = p2data
-	url = https://gitlab.com/mitx-community/data-science/6.419/mod2data
-[submodule "p3data"]
-	path = p3data
-	url = https://github.com/ragini30/Networks-Homework/
+[submodule "data"]
+	path = data
+	url = https://gitlab.com/MITx-community/data-science/6.419/data.git
