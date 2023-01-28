@@ -21,7 +21,7 @@ the data before the real action happens. You may want to display such code at
 the end of the report, but still have it run at the beginning. To do that, we
 duplicate the code at the start and end of the report, using
 `:tags: ["remove-input"]` at the start to hide the code, but still run it, and
-`:tags: ["remove-output"]` at the end to show the code, but not run it.
+omitting `{code-block}` at the end to show the code, but not run it.
 
 ## Tips
 
