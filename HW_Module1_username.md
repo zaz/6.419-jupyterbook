@@ -17,6 +17,19 @@ kernelspec:
 
 <div class="author"><b>Name:</b> username</div>
 
+```{code-cell}
+:tags: ["remove-input"]
+import numpy as np
+import sympy as sp
+import scipy.stats as st
+import statsmodels.api as sm
+from sympy.plotting.plot import plot_contour
+
+import seaborn as sb
+sb.set()
+sb.set_style("whitegrid", {'grid.linestyle': '--'})
+```
+
 ## Problem 1.1
 
 *1. (2 points): How would you run a randomized controlled double-blind experiment to determine the effectiveness of the vaccine? Write down procedures for the experimenter to follow. (Maximum 200 words.)*
@@ -193,3 +206,35 @@ $$\begin{align*}
 
 
 <br>
+
+
+## Includes
+
+```{code-cell}
+:tags: ["remove-output"]
+import numpy as np
+import sympy as sp
+import scipy.stats as st
+import statsmodels.api as sm
+from sympy.plotting.plot import plot_contour
+
+import seaborn as sb
+sb.set()
+sb.set_style("whitegrid", {'grid.linestyle': '--'})
+```
+
+## Footnote
+
+
+
+## Citations
+
+\[1] [Boehm K, Berger B, Weger U, Heusser P. Does the model of additive effect in placebo research still hold true? A narrative review. JRSM Open. 2017;8(3):2054270416681434. Published 2017 Feb 1. doi:10.1177/2054270416681434][1]
+
+\[2] [Ronald L. Wasserstein & Nicole A. Lazar (2016) The ASA Statement on p-Values: Context, Process, and Purpose, The American Statistician, 70:2, 129-133, DOI: 10.1080/00031305.2016.1154108][2]
+
+\[3] [Ioannidis JPA (2005) Why Most Published Research Findings Are False. PLoS Med 2(8): e124. https://doi.org/10.1371/journal.pmed.0020124][3]
+
+ [1]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5347270/
+ [2]: https://www.tandfonline.com/doi/full/10.1080/00031305.2016.1154108
+ [3]: https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020124

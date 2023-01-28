@@ -17,6 +17,16 @@ kernelspec:
 
 <div class="author"><b>Name:</b> username</div>
 
+```{code-cell}
+:tags: ["remove-input"]
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib.colors as colors
+
+# data loading and function definitons go here
+```
+
 ## Problem 2
 
 *(3 points): Provides an explanation of how the correlation was computed.*
@@ -185,3 +195,60 @@ kernelspec:
 *(4 points):* The 3 monitoring stations should be placed at Sibuco, Dagupan (on the Lingayen Guld at the top), and Lahad Datu.
 
 *(4 points):* These are the locations with the largest clusters of washed-up particles.
+
+<br>
+
+## Date Cleaning & Boilerplate Code
+
+To replicate my results, the following code must be run before any code above.
+
+### Data Cleaning
+
+Save CSV data in a Numpy compressed array format for easy (and faster) access:
+
+```{code-cell}
+:tags: ["remove-output"]
+import numpy as np
+import pandas as pd
+
+# Ocean Flow [x,y flow rate][time][x][y]
+OF = np.empty(shape=(2, 100, 555, 504))
+
+for t in range(100):
+    OF[0, t] = pd.read_csv(f"OceanFlow/{t+1}u.csv", header=None).T
+    OF[1, t] = pd.read_csv(f"OceanFlow/{t+1}v.csv", header=None).T
+
+mask = pd.read_csv(f"OceanFlow/mask.csv", header=None).T.iloc[:,::-1]
+
+np.savez_compressed("OceanFlow.npz", OF=OF, mask=mask)
+```
+
+The above only needs to be run once to clean the data; after that, the below must be run in every session before evaluating code snippets above:
+
+### Imports, Functions, and Definitions
+
+```{code-cell}
+:tags: ["remove-output"]
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib.colors as colors
+
+# data loading and function definitons go here
+```
+
+## Citations
+
+\[1] [Strassen, Volker (1969). "Gaussian Elimination is not Optimal". Numer. Math. 13 (4): 354–356. doi:10.1007/BF02165411. S2CID 121656251][1]
+
+\[2] [Alman, Josh; Williams, Virginia Vassilevska (2020), "A Refined Laser Method and Faster Matrix Multiplication", 32nd Annual ACM-SIAM Symposium on Discrete Algorithms (SODA 2021), arXiv:2010.05846][2]
+
+\[3] [Bachelier, L. (1900a), "Théorie de la spéculation" (PDF), Annales Scientifiques de l'École Normale Supérieure, vol. 3, no. 17, pp. 21–86][3]
+
+\[4] [Henry Small, 1973. "Co-citation in the scientific literature: A new measure of the relationship between two documents" Archived 2012-12-02 at the Wayback Machine. Journal of the American Society for Information Science (JASIS), volume 24(4), pp. 265-269. doi = 10.1002/asi.4630240406][4]
+
+
+ [1]: https://doi.org/10.1007%2FBF02165411
+ [2]: https://arxiv.org/abs/2010.05846
+ [3]: http://archive.numdam.org/article/ASENS_1900_3_17__21_0.pdf
+ [4]: https://web.archive.org/web/20121202085010/http://polaris.gseis.ucla.edu/gleazer/296_readings/small.pdf

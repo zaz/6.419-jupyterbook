@@ -17,6 +17,21 @@ kernelspec:
 
 <div class="author"><b>Name:</b> username</div>
 
+```{code-cell}
+:tags: ["remove-input"]
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.decomposition import PCA
+from sklearn.manifold import MDS, TSNE
+from sklearn.cluster import KMeans
+from sklearn.linear_model import LogisticRegression as LogReg
+from sklearn.linear_model import LogisticRegressionCV as LogRegCV
+import warnings
+warnings.simplefilter(action='ignore', category=(FutureWarning,UserWarning))
+
+# data loading, pre-processing, constant, helper functions go here
+```
+
 ## Part 1: Visualization
 
 *1. (3 points) Provide at least one visualization which clearly shows the existence of three main brain cell types as described by the scientist, and explain how it shows this. Your visualization should support the idea that cells from a different group (for example, excitatory vs inhibitory) can differ greatly.*
@@ -70,3 +85,37 @@ kernelspec:
 *2. (13 points) Pick three hyper-parameters below and analyze how changing the hyper-parameters affect the conclusions that can be drawn from the data. Please choose at least one hyper-parameter from each of the two categories (visualization and clustering/feature selection). At minimum, evaluate the hyper-parameters individually, but you may also evaluate how joint changes in the hyper-parameters affect the results. You may use any of the datasets we have given you in this project. For visualization hyper-parameters, you may find it productive to augment your analysis with experiments on synthetic data, though we request that you use real data in at least one demonstration.*
 
 **Solution:**
+
+
+<br>
+
+
+## Included Code
+
+The below code is run before any other code in this paper.
+
+Imports, data loading and pre-processing, constants, helper functions:
+
+```{code-cell}
+:tags: ["remove-output"]
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.decomposition import PCA
+from sklearn.manifold import MDS, TSNE
+from sklearn.cluster import KMeans
+from sklearn.linear_model import LogisticRegression as LogReg
+from sklearn.linear_model import LogisticRegressionCV as LogRegCV
+import warnings
+warnings.simplefilter(action='ignore', category=(FutureWarning,UserWarning))
+
+# data loading, pre-processing, constant, helper functions go here
+```
+
+## Citations
+
+\[1] [Aaron Defazio, Francis Bach, Simon Lacoste-Julien. SAGA: A Fast Incremental Gradient Method With Support for Non-Strongly Convex Composite Objectives][1]
+
+\[2] [Kobak, D., Berens, P. The art of using t-SNE for single-cell transcriptomics. Nat Commun 10, 5416 (2019). https://doi.org/10.1038/s41467-019-13056-x][2]
+
+ [1]: https://www.di.ens.fr/~fbach/Defazio_NIPS2014.pdf
+ [2]: https://doi.org/10.1038/s41467-019-13056-x

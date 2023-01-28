@@ -17,6 +17,19 @@ kernelspec:
 
 <div class="author"><b>Name:</b> username</div>
 
+```{code-cell}
+:tags: ["remove-input"]
+import numpy as np
+import pandas as pd
+import networkx as nx
+import statsmodels.api as sm
+import matplotlib.pyplot as plt
+import warnings
+warnings.simplefilter(action='ignore', category=(FutureWarning, UserWarning))
+
+# data loading/parsing goes here
+```
+
 ## Problem 1.2
 
 *c. (2 points): How does the time complexity of your solution involving matrix multiplication in part (a) compare to your friend's algorithm?*
@@ -95,3 +108,38 @@ kernelspec:
 
 
 ## Problem 4
+
+
+
+## Includes
+
+The code below must be run before any code above.  You will also need to install `pygraphviz` and `pygraphviz-dev`.
+
+```{code-cell}
+:tags: ["remove-output"]
+import numpy as np
+import pandas as pd
+import networkx as nx
+import statsmodels.api as sm
+import matplotlib.pyplot as plt
+import warnings
+warnings.simplefilter(action='ignore', category=(FutureWarning, UserWarning))
+
+# data loading/parsing goes here
+```
+
+## Citations
+
+\[1] [Strassen, Volker (1969). "Gaussian Elimination is not Optimal". Numer. Math. 13 (4): 354–356. doi:10.1007/BF02165411. S2CID 121656251][1]
+
+\[2] [Alman, Josh; Williams, Virginia Vassilevska (2020), "A Refined Laser Method and Faster Matrix Multiplication", 32nd Annual ACM-SIAM Symposium on Discrete Algorithms (SODA 2021), arXiv:2010.05846][2]
+
+\[3] [Bachelier, L. (1900a), "Théorie de la spéculation" (PDF), Annales Scientifiques de l'École Normale Supérieure, vol. 3, no. 17, pp. 21–86][3]
+
+\[4] [Henry Small, 1973. "Co-citation in the scientific literature: A new measure of the relationship between two documents" Archived 2012-12-02 at the Wayback Machine. Journal of the American Society for Information Science (JASIS), volume 24(4), pp. 265-269. doi = 10.1002/asi.4630240406][4]
+
+
+ [1]: https://doi.org/10.1007%2FBF02165411
+ [2]: https://arxiv.org/abs/2010.05846
+ [3]: http://archive.numdam.org/article/ASENS_1900_3_17__21_0.pdf
+ [4]: https://web.archive.org/web/20121202085010/http://polaris.gseis.ucla.edu/gleazer/296_readings/small.pdf
