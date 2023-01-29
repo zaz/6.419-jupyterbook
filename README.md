@@ -52,7 +52,7 @@ repository or search online for more details.
 ## More Resources
 
 Feel free to contribute and add things to the
-[GitLab MITx Data Science][https://gitlab.com/MITx-community/data-science/]
+[GitLab MITx Data Science][1]
 repository list.
 
 - [R Markdown](https://github.com/upfl0/MITx-6.419x) — upfl0
@@ -67,4 +67,8 @@ repository list.
    2. Don't let pages break up answer blocks.
 3. Use Markdown substitutions (`{{author}}`) to eliminate the need to manually
    find and replace your username. I could not get these to work.
-4. Do citations the [proper way][https://jupyterbook.org/en/stable/content/citations.html].
+4. Do citations the [proper way][2].
+
+
+ [1]: https://gitlab.com/MITx-community/data-science/
+ [2]: https://jupyterbook.org/en/stable/content/citations.html
