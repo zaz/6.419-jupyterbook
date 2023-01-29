@@ -1,28 +1,30 @@
 # MIT 6.419x Report Templates
 
-## Usage
+## Installation
 
-1. Install jupyter-book, and all other packages you might need:
-   ```pip3 install -r requirements.txt```
-2. Replace "Full Name" with your name in `_config.yml`
-3. Replace `username` with your edX username in each `HW_ModuleX.md` file
-4. Check that the questions match those on edX and report an issue on GitHub
-   otherwise.
-5. Answer questions (see `intro.md` for how to use MyST Markdown and add plots,
-   etc)
-6. Build the Jupyter Book with `jupyter book build .`
-   1. or `jupyter book build --builder pdflatex .` (untested)
-   2. or `jupyter book build --builder pdfhtml .` (untested)
-
-### Downloading data
-
-The data required for this class is quite large so is included as submodules.
-You can download it using:
-
+    git clone https://gitlab.com/MITx-community/data-science/6.419/report-template-jupyterbook.git reports
+    cd reports
+    pip3 install -r requirements.txt
     git submodule update --init --recursive --remote
 
-Be sure to check that this matches the data given in the course and open an
-issue or pull request if it does not.
+The 1st line downloads this repository.  The 2nd moves into the repository.
+The 3rd line ensures you have all of the Python package requirements listed
+in requirements.txt. The 4th line downloads the datasets for this course.
+
+**Note:** The last 2 lines will download gigabytes of data.  Please open an
+issue on GitHub if the datasets here no longer match those given on edX.
+
+## Usage
+
+1. Replace "Full Name" with your name in `_config.yml`
+2. Replace `username` with your edX username in each `HW_ModuleX.md` file
+3. Check that the questions match those on edX and open an issue on GitHub
+   otherwise.
+4. Answer questions (see `intro.md` for how to use MyST Markdown and add plots,
+   etc)
+5. Build the Jupyter Book with `jupyter book build .`
+   1. or `jupyter book build --builder pdflatex .` (untested)
+   2. or `jupyter book build --builder pdfhtml .` (untested)
 
 ### Including code in the footer
 
@@ -47,7 +49,11 @@ code. You may be able to build the Jupyter Book directly from your `.ipynb`
 instead of converting it to markdown first: See the initial commit of this Git
 repository or search online for more details.
 
-## Alternatives
+## More Resources
+
+Feel free to contribute and add things to the
+[GitLab MITx Data Science][https://gitlab.com/MITx-community/data-science/]
+repository list.
 
 - [R Markdown](https://github.com/upfl0/MITx-6.419x) — upfl0
 - [LaTeX](https://www.overleaf.com/read/ytcwypvhnzyd) — wkuang1
