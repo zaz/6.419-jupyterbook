@@ -16,7 +16,7 @@
 
 ### Downloading data
 
-The data required for this class is quite large so is included as submodels.
+The data required for this class is quite large so is included as submodules.
 You can download it using:
 
     git submodule update --init --recursive --remote
