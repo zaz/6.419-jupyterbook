@@ -14,6 +14,16 @@
    1. or `jupyter book build --builder pdflatex .` (untested)
    2. or `jupyter book build --builder pdfhtml .` (untested)
 
+### Downloading data
+
+The data required for this class is quite large so is included as submodels.
+You can download it using:
+
+    git submodule update --init --recursive --remote
+
+Be sure to check that this matches the data given in the course and open an
+issue or pull request if it does not.
+
 ### Including code in the footer
 
 A lot of these questions require many lines of code to load and pre-process
