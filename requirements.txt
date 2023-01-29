@@ -3,3 +3,7 @@ matplotlib
 numpy
 seaborn
 sympy
+statsmodels
+sklearn
+scikit-learn
+networkx
