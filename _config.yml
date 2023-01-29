@@ -18,7 +18,7 @@ latex:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/zaz/6.419_report_template  # Online location of your book
+  url: https://github.com/zaz/6.419-jupyterbook  # Online location of your book
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
